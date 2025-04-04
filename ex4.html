@@ -19,13 +19,24 @@
         <li>Item 3</li>
     </ul>
     <button onclick="insertBefore()">Insert Before Second Item</button>
-    <button onclick="insertAfter()">Insert After the Last Item</button
+    <button onclick="insertAfter()">Insert After the Last Item</button>
 
-    <br><br>
+    <br></br>
     <a href="index.html">Back to the home page</a>
 
     <script>
-        
+        function insertBefore(){
+            var list = document.getElementById('myList')
+            var li1 = document.createElement('li');
+            li1.append("ul");
+        }
+
+        function insertAfter(){
+            var list = document.getElementById('myList')
+            var li2 = document.createElement('li');
+            li2.append("li");
+
+        }
     </script>
 </body>
 </html>
