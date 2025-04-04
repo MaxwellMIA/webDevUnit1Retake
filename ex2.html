@@ -30,11 +30,18 @@
     <a href="index.html">Back to the home page</a>
 
     <script>
-        var button = document.getElementById("paraBtn");
-        button.onclick=b();
+        var button = document.getElementById("changeColorBtn");
+        button.onclick=color();
+        function color() {
+            var box = document.getElementById('box');
+            box.style.backgroundColor="red";
+        }
+
+        var buttonTwo = document.getElementById("paraBtn");
+        buttonTwo.onclick=b();
         function b(){
             var para = document.getElementById('para');
-            para.style.color."red";
+            para.style.color="red";
         }
     </script>
 </body>
